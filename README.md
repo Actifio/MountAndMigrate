@@ -55,3 +55,9 @@ Below is a CLI example of the above three step process. Please note you must be 
 * -action finalize runs the final backup and recovery task, and also switches the database from the mounted volumes, to the locally restored files, and unmounts the original disk image.
 
 After the finalize step is executed, the new database should be re-protected if it is now migrated to a new target location.
+
+#Supporting Videos
+1. Demonstration of Mount and Migrate via AGM - 
+2. Demonstration of Mount and Migrate via CLI - 
+
+
