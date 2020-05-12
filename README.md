@@ -1,5 +1,5 @@
 # MountAndMigrate
-Actifio Mount and Migrate CLI examples and further details.
+**Actifio Mount and Migrate CLI examples and further details**
 
 In Actifio 10c, there is a new feature called Mount and Migrate (M&M) that can be used for customers to help move an application (Database, Filesystems, etc) to an alternate physical storage location, rather than be mounted from an Actifio appliance virtually. This M&M feature helps customers greatly via multiple use cases, such as:
 *1. Enhancing application recovery times for traditional restore requests, as Database(s) can be mounted (instantly) and put back into use quickly, while the movement of files can be done after the DB is back online, and a final switch over to the modified database at a point in time in the future. So very low RTO, and greatly assists customers with very large Database(s) in the multi-terabyte size.
@@ -16,7 +16,7 @@ Mount and Migrate contains three separate functions to achieve the migration of 
 
 Below is a CLI example of the above three step process. Please note you must be using the Actifio CLI and have sufficient rights to run the below commands, which is assumed to be configured already.
 
-- [x] **Step 1 - Mount the Database smalldb to SQL host DEMO-SQL-3 as new DB name DBMount2**
+- [x] **Step 1 - Mount a Database backup image to SQL host DEMO-SQL-3 as new Database with the name DBMount2**
 
 ```udstask mountimage -host demo-sql-3 -image Image_22647206 -restoreoption "provisioningoptions=<provisioning-options><sqlinstance>DEMO-SQL-3</sqlinstance><dbname>DBMount2</dbname><recover>true</recover><userlogins>false</userlogins></provisioning-options>,reprotect=false"```
 
