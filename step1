@@ -1,0 +1,1 @@
+udstask mountimage -host demo-sql-3 -image Image_22647206 -restoreoption "provisioningoptions=<provisioning-options><sqlinstance>DEMO-SQL-3</sqlinstance><dbname>DBMount2</dbname><recover>true</recover><userlogins>false</userlogins></provisioning-options>,reprotect=false"
