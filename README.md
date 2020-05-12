@@ -42,7 +42,7 @@ Below is a CLI example of the above three step process. Please note you must be 
 * \<source> equals the directory location where source files are located
 * \<target> equals the location where you want the files to be located on the target host
 * -restoreoption is a comma delimited list of restore options where each restore option is a name=value pair
-* \provisioningoptions= allows modifying of additional options and can be skipped if you do not wish to edit the default copythreadcount (4).
+* provisioningoptions = allows modifying of additional options and can be skipped if you do not wish to edit the default copythreadcount (4).
 * \<copythreadcount> allows the modification of the copythreadcount (1-20) where this will increase the parallel copy threads to use per disk volume
 * frequency is how often to update the flat files on the local host with changes from the mounted database. The values here are 1-24hrs. With 24hrs being the default.
 
